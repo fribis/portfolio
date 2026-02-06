@@ -225,7 +225,7 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 md:px-12 py-6">
             <div className="flex items-center justify-center gap-8">
               <a
-                href="mailto:hello@example.com"
+                href="mailto:info@friedrich.bischoff.de"
                 className="text-gray-500 hover:text-accent transition-colors"
                 aria-label="Email"
               >
@@ -245,7 +245,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/friedrich-bischoff/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-500 hover:text-accent transition-colors"
