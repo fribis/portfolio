@@ -87,9 +87,9 @@ export default function Home() {
             <div className="flex items-center gap-6">
               {/* Avatar */}
               <div className="relative flex-shrink-0">
-                {/* Outer glow circle with gradient fade */}
-                <div className="absolute inset-0 w-[70px] h-[70px] rounded-full -translate-x-[9px] -translate-y-[9px]"
-                     style={{background: 'radial-gradient(circle, rgba(96, 165, 250, 0.6) 0%, rgba(96, 165, 250, 0.5) 50%, rgba(96, 165, 250, 0.12) 100%)'}}>
+                {/* Animated rainbow glow circle - wrapper for positioning */}
+                <div className="absolute inset-0 w-[70px] h-[70px] -translate-x-[9px] -translate-y-[9px]">
+                  <div className="w-full h-full rounded-full avatar-rainbow-glow"></div>
                 </div>
                 {/* Avatar circle */}
                 <div className="relative w-[52px] h-[52px] rounded-full overflow-hidden bg-white">

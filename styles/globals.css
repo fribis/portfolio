@@ -11,3 +11,29 @@
     @apply bg-white text-gray-900;
   }
 }
+
+@keyframes rainbow-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.avatar-rainbow-glow {
+  background: conic-gradient(
+    from 0deg,
+    rgba(230, 180, 130, 0.6) 0%,
+    rgba(255, 220, 180, 0.6) 16%,
+    rgba(150, 190, 210, 0.6) 33%,
+    rgba(180, 220, 235, 0.6) 50%,
+    rgba(140, 100, 120, 0.6) 66%,
+    rgba(180, 120, 130, 0.6) 83%,
+    rgba(230, 180, 130, 0.6) 100%
+  );
+  mask-image: radial-gradient(circle, transparent 0%, transparent 30%, black 50%, transparent 100%);
+  -webkit-mask-image: radial-gradient(circle, transparent 0%, transparent 30%, black 50%, transparent 100%);
+  transform-origin: center center;
+  animation: rainbow-rotate 6s linear infinite;
+}
