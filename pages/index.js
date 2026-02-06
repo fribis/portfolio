@@ -194,7 +194,14 @@ export default function Home() {
             <div className="grid md:grid-cols-[300px,1fr] lg:grid-cols-[400px,1fr] gap-12 lg:gap-16 items-start">
               {/* Image - Portrait */}
               <div>
-                <div className="aspect-[3/4] w-full max-w-[300px] lg:max-w-none bg-gradient-to-br from-gray-200 to-gray-300">
+                <div className="aspect-[3/4] w-full max-w-[300px] lg:max-w-none relative">
+                  <Image
+                    src={`/${activeSection}.jpg`}
+                    alt={t.nav[activeSection.toLowerCase()]}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 300px, 400px"
+                  />
                 </div>
               </div>
 
